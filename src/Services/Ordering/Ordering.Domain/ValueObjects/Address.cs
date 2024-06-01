@@ -9,7 +9,7 @@ namespace Ordering.Domain.ValueObjects
         public string AddressLine { get; } = default!;
         public string Country { get; } = default!;  
         public string State { get; } = default!;
-        public string ZipCode {  get; } = default!;
+        public string ZipCode { get; } = default!;
 
         protected Address()
         {

@@ -1,8 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Ordering.Domain.Enums;
-using Ordering.Domain.Models;
-using Ordering.Domain.ValueObjects;
 
 namespace Ordering.Infrastructure.Data.Configurations
 {
@@ -59,7 +56,7 @@ namespace Ordering.Infrastructure.Data.Configurations
                     .HasMaxLength(50);
 
                     addressBuilder.Property(a => a.ZipCode) 
-                    .HasMaxLength(5)
+                    .HasMaxLength(6)
                     .IsRequired();
                 });
 
@@ -88,7 +85,7 @@ namespace Ordering.Infrastructure.Data.Configurations
                     .HasMaxLength(50);
 
                     addressBuilder.Property(a => a.ZipCode)
-                    .HasMaxLength(5)
+                    .HasMaxLength(6)
                     .IsRequired();
                 });
 
